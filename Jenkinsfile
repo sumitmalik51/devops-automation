@@ -15,7 +15,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'systemctl start docker'
+                    sh 'sudo systemctl start docker'
                     sh 'docker build -t sumitmalik51/devops-integration .'
                 }
             }
